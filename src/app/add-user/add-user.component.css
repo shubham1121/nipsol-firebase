@@ -1,0 +1,24 @@
+.sub_head{
+    padding-top: 20px;
+    font-size: x-large;
+    padding-left: 20px;
+  }
+  .mycontainer{
+    padding-left: 30%;
+  }
+  .form-control
+  { width: min-content;
+  }
+  .validation-msg{
+     color: red;
+  }
+
+.back-violet {
+  
+  border-color: #9e6df7;
+  background-color:#9e6df7 ;
+}
+.back-black{
+  border-color: #323433;
+  background-color: #323433;
+}

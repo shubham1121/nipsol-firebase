@@ -1,0 +1,45 @@
+<div class="records-wrapper">
+  <div class="countrySelect">
+    <label for="selectCountry">Select Country</label>
+  </div>
+  <div class="dropDownMenu">
+    <select id="selectCountry" (change)="getSlug($event)">
+  <option [value]="country.Slug"  selected *ngFor="let country of countryName;">{{country.Country}}</option>
+</select>
+  </div>
+  <div class="alignDotsData">
+    <div class="blueCircle"></div>
+    <div>{{covidCount ? covidCount.TotalConfirmed:0}}</div>
+  </div>
+  <div class="alignDotsData">
+    <div class="greenCircle"></div>
+    <div>{{covidCount ? covidCount.TotalDeaths:0}}</div>
+  </div>
+  <div class="alignDotsData">
+    <div class="redCircle"></div>
+    <div>{{covidCount ? covidCount.TotalRecovered:0}}</div>
+  </div>
+</div>
+<div class="my-table">
+  <table class="table table-bordered my-table-alignment">
+    <thead>
+      <tr class="head-row">
+        <th scope="col">Date</th>
+        <th scope="col">Total Cases</th>
+        <th scope="col">Active</th>
+        <th scope="col">Recovered</th>
+        <th scope="col">Deaths</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of covidCountryData;">
+        <td>{{data.Date | date:'dd/MM/yyyy'}}</td>
+        <td>{{data.Confirmed}}</td>
+        <td>{{data.Active}}</td>
+        <td>{{data.Recovered}}</td>
+        <td>{{data.Deaths}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

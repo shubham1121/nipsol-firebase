@@ -1,0 +1,67 @@
+<div >
+    <div>
+        <h1 class="sub_head"> <strong>User Registration</strong></h1>
+    </div>
+
+    <div class="container mycontainer">
+        <form [formGroup]="userDetails" (ngSubmit)="onSubmit()">
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label"> <strong>Name</strong></label>
+                <div class="col-sm-10">
+                    <input name="name" formControlName="userName" class="form-control"
+                        #inputName>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"><strong>Email</strong></label>
+                <div class="col-sm-10">
+                    <input type="email" formControlName="userEmail" class="form-control" id="inputEmail3">
+                    <span class="validation-msg" *ngIf="email.invalid &&email.touched">Email can't be left empty</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPhone" class="col-sm-2 col-form-label"><strong>Phone</strong></label>
+                <div class="col-sm-10">
+                    <input type="tel" formControlName="userPhone" class="form-control" id="inputPhone">
+                    <span class="validation-msg" *ngIf="phone.invalid &&phone.touched">Invalid Mobile Number</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputAddress" class="col-sm-2 col-form-label"><strong>Address</strong></label>
+                <div class="col-sm-10">
+                    <input type="address" formControlName="userAddress" class="form-control" id="inputAddress">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0 "> <strong>Gender</strong> </legend>
+                    <div class="col-sm-10 d-flex">
+                        <div class="form-check d-flex">
+                            <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <strong>Male</strong>
+                            </label>
+                        </div>
+                        <div class="form-check ml-3 ">
+                            <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                <strong>Female</strong>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group ">
+                <div class="col-sm-10">
+                    <button type="reset" class="btn btn-primary  px-5  back-black">Reset
+                    </button>
+                    <button type="submit" class="btn btn-primary  px-5 ml-3 back-violet" [disabled]="!userDetails.valid"   >Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

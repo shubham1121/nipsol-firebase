@@ -1,0 +1,54 @@
+.countrySelect {
+  font-weight: 600;
+  font-size: 20px;
+}
+.dropDownMenu {
+  font-weight: 500;
+  font-size: 15px;
+  /* width: 30px; */
+}
+/* #selectCountry {
+  width: 180px;
+} */
+.records-wrapper{
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.alignDotsData{
+  width: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.blueCircle{
+  background-color: blue;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+}
+.redCircle{
+  background-color: red;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+}
+.greenCircle{
+  background-color: green;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+}.my-table-alignment{
+  text-align: center;
+}
+.my-table{
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+.head-row{
+background-color: grey;
+}

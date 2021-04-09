@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "day-7-task": {
+      "hosting": {
+        "nipsol-firebase": [
+          "day-7-task"
+        ]
+      }
+    }
+  }
+}
