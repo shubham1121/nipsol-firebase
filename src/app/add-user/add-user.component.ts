@@ -26,6 +26,7 @@ export class AddUserComponent implements OnInit {
  onSubmit()
   {
     this.userService.collectData(this.userDetails.value);
+    this.userService.createUser();
   }
 
 }

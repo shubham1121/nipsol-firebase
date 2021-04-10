@@ -13,7 +13,7 @@ import { UsersService } from './users.service';
 import { CovidMeterComponent } from './covid-meter/covid-meter.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment.prod';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({

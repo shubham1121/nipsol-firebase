@@ -3,11 +3,11 @@
       <div class="col-sm-6 mb-3" *ngFor="let item of userDetails; let i=index;" >
         <div class="card myShadow" >
           <div class="card-body">
-            <button type='button' class='close'>×</button>
-            <h4>{{i+1}}. {{item.userName}} </h4>
-            <h4>{{item.userEmail}} </h4>
-            <h4>{{item.userPhone}}</h4>
-            <h4>{{item.userAddress}}</h4>
+            <button type='button' (click)="deleteRec(item.id)"  class='close'>×</button>
+            <h4>{{i+1}}. {{item.name}} </h4>
+            <h4>{{item.email}} </h4>
+            <h4>{{item.phone}}</h4>
+            <h4>{{item.address}}</h4>
           </div>
         </div>
       </div>
